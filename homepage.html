@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> AdoptUs </title>
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/fb9916b182.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://kit.fontawesome.com/fb9916b182.css" crossorigin="anonymous">
+
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Sacramento&display=swap"
+		rel="stylesheet">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- External JS -->
+	<script src="feature.js"></script>
+
+</head>
+
+<body>
+
+	<div id="side-menu">
+		<ul>
+			<li> <a class="active" href="homepage.html"> <i class="fa-solid fa-house"></i> Home Page </a></li>
+			<li> <a class="" href="pets.html"> <i class="fa-sharp fa-solid fa-eye"></i> Browse Available Pets </a>
+			</li>
+			<li> <a class="" href="find.html"> <i class="fa-sharp fa-solid fa-magnifying-glass"></i> Find a dog/cat </a>
+			</li>
+			<li> <a class="" href="dogcare.html"> <i class="fa-solid fa-dog"></i> Dog Care </a></li>
+			<li> <a class="" href="catcare.html"> <i class="fa-solid fa-cat"></i> Cat Care </a></li>
+			<li> <a class="" href="givepet.html"> <i class="fa-solid fa-heart"></i> Give your pet </a></li>
+			<li> <a class="" href="contact.html"> <i class="fa-solid fa-address-book"></i> Contact Us </a></li>
+		</ul>
+
+	</div>
+
+	<div id="container">
+
+		<div id="header">
+			<a href="homepage.html"> <img class="main-icon"
+					src="https://cdn-icons-png.flaticon.com/512/3047/3047827.png" alt="main-icon"> </a>
+			<h1 id="name_service"> AdoptUs </h1>
+			<h5 id="date"></h5>
+			<h5 id="time"></h5>
+		</div>
+
+		<h1 class="Title"> Find your forever friend, adopt a paw-some life!</h1>
+
+		<p class="description"> Welcome to AdoptUS! Find a loving forever home for a pet in need or
+			adopt your new best friend at our pet adoption website. Browse through our collection of dogs and cats, each
+			with their own unique personalities,
+			and choose the perfect match for your family and personal lifestyle. Give the gift of love and joy to both
+			the pet
+			and yourself. This website also provide general care for your cats and dogs. Feel free to navigate
+			throughout our side menu to discover all of our features.</p>
+		<a href="find.html" class="myButton"> <i class="fa-solid fa-paw"></i> Get Started</a>
+
+		<img src="img/homepage.png" alt="mylo" class="mylo">
+		<a href="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbnM4MjMwLWltYWdlLWpvYjYyOS0wMWFfMS1renA3YzJ5eC5wbmc.png?s=QdXNF8R2FcgfuGuKc_HMCnRNWNW9iUpy8_bdxG-nej4"
+			target="_blank"> <img src="img/homepage2.png" alt="" class="golden"> </a>
+		<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwmGPp7x-Y0rEyysZOIHP3BkyGDlxlrveueg&usqp=CAU">
+			<img src="img/cat.png" alt="" class="kitten1"> </a>
+
+		<div id="footer">
+			<a href="privacy.html" class="privacy"> <img src="img/output-onlinegiftools.gif" alt="Privacy Statement"
+					class="privacy-policy" title="Privacy Statement"></a>
+			<p class="copyright">© AdoptUs</p>
+		</div>
+	</div>
+
+	<script>
+		document.getElementById("date").innerHTML = getCurrentDate();
+		setInterval(getCurrentTime, 1000);
+	</script>
+
+</body>
+
+</html>

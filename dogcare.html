@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> AdoptUs </title>
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/fb9916b182.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://kit.fontawesome.com/fb9916b182.css" crossorigin="anonymous">
+
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Sacramento&display=swap"
+		rel="stylesheet">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- External JS -->
+	<script src="feature.js"></script>
+
+</head>
+
+<body>
+
+	<div id="side-menu">
+		<ul>
+			<li> <a class="active" href="homepage.html"> <i class="fa-solid fa-house"></i> Home Page </a></li>
+			<li> <a class="" href="pets.html"> <i class="fa-sharp fa-solid fa-eye"></i> Browse Available Pets </a>
+			</li>
+			<li> <a class="" href="find.html"> <i class="fa-sharp fa-solid fa-magnifying-glass"></i> Find a dog/cat </a>
+			</li>
+			<li> <a class="" href="dogcare.html"> <i class="fa-solid fa-dog"></i> Dog Care </a></li>
+			<li> <a class="" href="catcare.html"> <i class="fa-solid fa-cat"></i> Cat Care </a></li>
+			<li> <a class="" href="givepet.html"> <i class="fa-solid fa-heart"></i> Give your pet </a></li>
+			<li> <a class="" href="contact.html"> <i class="fa-solid fa-address-book"></i> Contact Us </a></li>
+		</ul>
+
+	</div>
+
+	<div id="container">
+
+		<div id="header">
+			<a href="homepage.html"> <img class="main-icon"
+					src="https://cdn-icons-png.flaticon.com/512/3047/3047827.png" alt="main-icon"> </a>
+			<h1 id="name_service"> AdoptUs </h1>
+			<h5 id="date"> </h5>
+			<h5 id="time"> </h5>
+		</div>
+
+		<h1 class="Title"> Dog Care </h1>
+
+		<div class="dog-care">
+			<ul class="dog-care-list">
+				<li>
+					<h4> Take your dog on daily walks </h4>
+				</li>
+				<li>
+					<h4> Make sure your dog is groomed </h4>
+				</li>
+				<li>
+					<h4> Take your dog for routine veterinary checkups </h4>
+				</li>
+				<li>
+					<h4> Protect them from fleas, ticks and heartworms </h4>
+				</li>
+				<li>
+					<h4> Feed enough nutriments daily </h4>
+				</li>
+				<li>
+					<h4> Benefits of vaccinations </h4>
+				</li>
+				<li>
+					<h4> Give them love! </h4>
+				</li>
+			</ul>
+		</div>
+
+		<div class="dogcare-logo"> <i class="fa-solid fa-bone fa-5x fa-shake"></i> </div>
+		<a href="https://www.aspca.org/pet-care/dog-care/general-dog-care" class="myButton1" target="_blank"> <i
+				class="fa-solid fa-paw"></i> More Info </a>
+		<a href="https://media.istockphoto.com/id/1197074302/photo/happy-puppy-dog-running-on-playground-green-yard.jpg?s=612x612&w=0&k=20&c=8iZ6gpBS7PEPqIUqWLqHUGes9kQ2S8JOvNJ0RQrr1Gw="
+			target="_blank"> <img src="img/dogcare.png" alt="dogcare" class="dogcare-img"></a>
+		<a href="https://images.unsplash.com/photo-1562176546-95420556c872?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGFwcHklMjBwdXBweXxlbnwwfHwwfHw%3D&w=1000&q=80"
+			target="_blank"> <img src="img/dogcare2.png" alt="dogcare2" class="dogcare2-img"></a>
+
+
+		<div id="footer-dogcare">
+			<a href="privacy.html" class="privacy"> <img src="img/output-onlinegiftools.gif" alt="Privacy Statement"
+					class="privacy-policy" title="Privacy Statement"></a>
+			<p class="copyright">© AdoptUs</p>
+		</div>
+	</div>
+
+	<script>
+		document.getElementById("date").innerHTML = getCurrentDate();
+		setInterval(getCurrentTime, 1000);
+	</script>
+
+</body>
+
+</html>

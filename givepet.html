@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> AdoptUs </title>
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/fb9916b182.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://kit.fontawesome.com/fb9916b182.css" crossorigin="anonymous">
+
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Sacramento&display=swap"
+		rel="stylesheet">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- External JS -->
+	<script src="feature.js"></script>
+
+</head>
+
+<body>
+
+	<div id="side-menu">
+		<ul>
+			<li> <a class="active" href="homepage.html"> <i class="fa-solid fa-house"></i> Home Page </a></li>
+			<li> <a class="" href="pets.html"> <i class="fa-sharp fa-solid fa-eye"></i> Browse Available Pets </a>
+			</li>
+			<li> <a class="" href="find.html"> <i class="fa-sharp fa-solid fa-magnifying-glass"></i> Find a dog/cat </a>
+			</li>
+			<li> <a class="" href="dogcare.html"> <i class="fa-solid fa-dog"></i> Dog Care </a></li>
+			<li> <a class="" href="catcare.html"> <i class="fa-solid fa-cat"></i> Cat Care </a></li>
+			<li> <a class="" href="givepet.html"> <i class="fa-solid fa-heart"></i> Give your pet </a></li>
+			<li> <a class="" href="contact.html"> <i class="fa-solid fa-address-book"></i> Contact Us </a></li>
+		</ul>
+
+	</div>
+
+	<div id="container">
+
+		<div id="header">
+			<a href="homepage.html"> <img class="main-icon"
+					src="https://cdn-icons-png.flaticon.com/512/3047/3047827.png" alt="main-icon"> </a>
+			<h1 id="name_service"> AdoptUs </h1>
+			<h5 id="date"> </h5>
+			<h5 id="time"> </h5>
+		</div>
+
+		<h1 class="Title"> Give your pet </h1>
+		<a href="https://cdn-icons-png.flaticon.com/512/2960/2960221.png"> <img src="img/give-icon.png" alt="give-icon"
+				class="give-icon"> </a>
+		<a
+			href="https://media.istockphoto.com/id/1324099927/photo/friends-red-cat-and-corgi-dog-walking-in-a-summer-meadow-under-the-drops-of-warm-rain.jpg?b=1&s=170667a&w=0&k=20&c=leteimO0gpfcQFMATgzMZl8xAxHM5d3Ds2VaOZuXUJU=">
+			<img src="img/give1.png" alt="give-img" class="give-img"> </a>
+
+		<div class="give-form">
+			<form id="mysecondform" onsubmit="isEmpty2()">
+				<fieldset>
+
+					<label for="fname"> First Name Owner </label>
+					<input type="text" id="fname" name="fname"> <br><br>
+					<label for="lname"> Family Name Owner </label>
+					<input type="text" id="lname" name="lname">
+					<br><br>
+
+					<label for="email"> Email </label>
+					<input type="email" id="email" name="email">
+					<br><br>
+
+					<label> Cat or Dog </label>
+					<input type="text" id="dog-or-cat" name="dog-or-cat"> <br><br>
+
+					<label id="breed-dog"> Breed of dog </label> <br>
+					<input type="radio" id="golden" name="breed">
+					<label for="golden"> Golden Retriever</label>
+					<input type="radio" id="bulldog" name="breed">
+					<label for="bulldog"> Bulldog </label>
+					<input type="radio" id="german" name="breed">
+					<label for="german"> German Shephard</label>
+					<br>
+					<input type="radio" id="no-matter1" name="breed">
+					<label for="no-matter1"> Mix breed </label> 
+					<input type="radio" id="none1" name="breed">
+					<label for="none1"> None </label> <br>
+					<label for="other-dog"> Other: </label>
+					<input type="text" id="other-dog" name="breed">
+					<br><br>
+					<label id="breed-cat"> Breed of cat </label> <br>
+					<input type="radio" id="scottish" name="breed">
+					<label for="scottish"> Scottish Fold </label>
+					<input type="radio" id="birman" name="breed">
+					<label for="birman"> Birman </label>
+					<input type="radio" id="british" name="breed">
+					<label for="british"> British Shorthair </label>
+					<br>
+					<input type="radio" id="no-matter2" name="breed">
+					<label for="no-matter2"> Mix bread </label>
+					<input type="radio" id="none2" name="breed">
+					<label for="none2"> None </label> <br>
+					<label for="other-cat"> Other: </label>
+					<input type="text" id="other-cat" name="breed">
+
+					<br><br>
+
+					<label id="gender"> Gender: </label>
+					<input type="radio" name="gender" id="female">
+					<label for="female"> Female </label>
+					<input type="radio" name="gender" id="male">
+					<label for="male"> Male </label>
+					<br><br>
+
+					<label id="get-along"> Get along with </label> <br>
+					<input type="checkbox" id="other-dogs" name="environment">
+					<label for="other-dogs"> Other dogs </label>
+					<input type="checkbox" id="other-cats" name="environment">
+					<label for="other-cats"> Other cats </label>
+					<input type="checkbox" id="small-children" name="environment">
+					<label for="small-children"> Small children </label> <br><br>
+
+					<label id="description"> Describe it! </label> <br>
+					<textarea name="textarea" id="textarea" cols="50" rows="6"></textarea>
+				</fieldset>
+
+				<br><br>
+				<input type="submit" name="submit" value="Submit">
+				<input type="reset" name="reset" value="Reset">
+			</form>
+		</div>
+
+
+		<div id="footer-give">
+			<a href="privacy.html" class="privacy"> <img src="img/output-onlinegiftools.gif" alt="Privacy Statement"
+					class="privacy-policy" title="Privacy Statement"></a>
+			<p class="copyright">© AdoptUs</p>
+		</div>
+	</div>
+
+	<script>
+		document.getElementById("date").innerHTML = getCurrentDate();
+		setInterval(getCurrentTime, 1000);
+	</script>
+
+</body>
+
+</html>

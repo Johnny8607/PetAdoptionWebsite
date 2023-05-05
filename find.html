@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> AdoptUs </title>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fb9916b182.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/fb9916b182.css" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- External JS -->
+	<script src="feature.js"></script>
+
+</head>
+
+<body>
+
+    <div id="side-menu">
+        <ul>
+            <li> <a class="active" href="homepage.html"> <i class="fa-solid fa-house"></i> Home Page </a></li>
+            <li> <a class="" href="pets.html"> <i class="fa-sharp fa-solid fa-eye"></i> Browse Available Pets </a>
+            </li>
+            <li> <a class="" href="find.html"> <i class="fa-sharp fa-solid fa-magnifying-glass"></i> Find a dog/cat </a>
+            </li>
+            <li> <a class="" href="dogcare.html"> <i class="fa-solid fa-dog"></i> Dog Care </a></li>
+            <li> <a class="" href="catcare.html"> <i class="fa-solid fa-cat"></i> Cat Care </a></li>
+            <li> <a class="" href="givepet.html"> <i class="fa-solid fa-heart"></i> Give your pet </a></li>
+            <li> <a class="" href="contact.html"> <i class="fa-solid fa-address-book"></i> Contact Us </a></li>
+        </ul>
+
+    </div>
+
+    <div id="container">
+
+        <div id="header">
+            <a href="homepage.html"> <img class="main-icon"
+                    src="https://cdn-icons-png.flaticon.com/512/3047/3047827.png" alt="main-icon"> </a>
+            <h1 id="name_service"> AdoptUs </h1>
+            <h5 id="date"> </h5>
+			<h5 id="time"> </h5>
+        </div>
+
+        <h1 class="Title"> Find your pet</h1>
+
+        <div class="find-form">
+            <form id="myform" onsubmit="isEmpty()">
+                <fieldset>
+                    <label for="dog-or-cat"> Cat or Dog </label>
+                    <input type="text" id="dog-or-cat" name="dog-or-cat"> <br><br>
+
+                    <label id="breed-dog"> Breed of dog </label> <br>
+                    <input type="radio" id="golden" name="breed">
+                    <label for="golden"> Golden Retriever</label>
+                    <input type="radio" id="bulldog" name="breed">
+                    <label for="bulldog"> Bulldog </label>
+                    <input type="radio" id="german" name="breed">
+                    <label for="german"> German Shephard</label>
+                    <br>
+                    <input type="radio" id="no-matter1" name="breed">
+                    <label for="no-matter1"> Doesn't matter </label>
+                    <br><br>
+                    <label id="breed-cat"> Breed of cat </label> <br>
+                    <input type="radio" id="scottish" name="breed">
+                    <label for="scottish"> Scottish Fold </label>
+                    <input type="radio" id="birman" name="breed">
+                    <label for="birman"> Birman </label>
+                    <input type="radio" id="british" name="breed">
+                    <label for="british"> British Shorthair </label>
+                    <br>
+                    <input type="radio" id="no-matter2" name="breed">
+                    <label for="no-matter2"> Doesn't matter </label>
+
+                    <br><br>
+                    <label for="age"> Preferred age of animal</label>
+
+                    <select name="age" id="age">
+                        <option> </option>
+                        <option> Birth - 6 months </option>
+                        <option> 7 months - 2 years </option>
+                        <option> 3 - 7 years </option>
+                        <option> 8 years or Older </option>
+                        <option> Doesn't matter </option>
+                    </select> <br> <br>
+
+                    <label id="gender"> Gender: </label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female"> Female </label>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male"> Male </label>
+                    <input type="radio" name="gender" id="no-matter3">
+                    <label for="no-matter3"> Doesn't matter </label>
+
+                    <br><br>
+
+                    <label> Needs to get along with </label> <br>
+                    <input type="checkbox" id="other-dogs" name="environment">
+                    <label for="other-dogs"> Other dogs </label>
+                    <input type="checkbox" id="other-cats" name="environment">
+                    <label for="other-cats"> Other cats </label>
+                    <input type="checkbox" id="small-children" name="environment">
+                    <label for="small-children"> Small children </label> <br><br>
+
+                </fieldset>
+                <input id="submitButton" type="submit" name="submit" value="Submit">
+                <input type="reset" name="reset" value="Reset">
+            </form>
+        </div>
+
+        <a
+            href="https://c4.wallpaperflare.com/wallpaper/457/286/462/kitten-hd-brown-tabby-kitten-wallpaper-preview.jpg">
+            <img src="img/cat_find.png" alt="" class="cat-find"> </a>
+        <p class="find-icon"> <i class="fa-solid fa-magnifying-glass fa-9x fa-beat-fade"></i></p>
+        <a
+            href="https://c4.wallpaperflare.com/wallpaper/32/456/898/black-cute-puppy-french-bulldog-wallpaper-preview.jpg">
+            <img src="img/dog_find.png" alt="" class="dog-find"></a>
+
+        <div id="footer-find">
+            <a href="privacy.html" class="privacy"> <img src="img/output-onlinegiftools.gif" alt="Privacy Statement"
+                    class="privacy-policy" title="Privacy Statement"></a>
+            <p class="copyright">© AdoptUs</p>
+        </div>
+    </div>
+
+    <script>
+		document.getElementById("date").innerHTML = getCurrentDate();
+		setInterval(getCurrentTime, 1000);
+	</script>
+
+</body>
+
+</html>

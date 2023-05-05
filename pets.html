@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> AdoptUs </title>
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/fb9916b182.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://kit.fontawesome.com/fb9916b182.css" crossorigin="anonymous">
+
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Sacramento&display=swap"
+		rel="stylesheet">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- External JS -->
+	<script src="feature.js"></script>
+
+</head>
+
+<body>
+
+	<div id="side-menu">
+		<ul>
+			<li> <a class="" href="homepage.html"> <i class="fa-solid fa-house"></i> Home Page </a></li>
+			<li> <a class="active1" href="pets.html"> <i class="fa-sharp fa-solid fa-eye"></i> Browse Available Pets
+				</a></li>
+			<li> <a class="" href="find.html"> <i class="fa-sharp fa-solid fa-magnifying-glass"></i> Find a dog/cat </a>
+			</li>
+			<li> <a class="" href="dogcare.html"> <i class="fa-solid fa-dog"></i> Dog Care </a></li>
+			<li> <a class="" href="catcare.html"> <i class="fa-solid fa-cat"></i> Cat Care </a></li>
+			<li> <a class="" href="givepet.html"> <i class="fa-solid fa-heart"></i> Give your pet </a></li>
+			<li> <a class="" href="contact.html"> <i class="fa-solid fa-address-book"></i> Contact Us </a></li>
+		</ul>
+
+	</div>
+
+	<div id="container">
+		<div id="header">
+			<a href="homepage.html"> <img class="main-icon"
+					src="https://cdn-icons-png.flaticon.com/512/3047/3047827.png" alt="main-icon"> </a>
+			<h1 id="name_service"> AdoptUs </h1>
+			<h5 id="date"></h5>
+			<h5 id="time"></h5>
+		</div>
+
+		<div class="slogan_style">
+			<h1 class="Title"> Browse Available Pets </h1>
+		</div>
+
+		<div id="available_pets">
+			<div class="pet">
+				<a
+					href="https://media.istockphoto.com/id/1306641965/photo/cobberdog-pup-on-white-background.jpg?s=612x612&w=0&k=20&c=yERA7k-SKw8A5wXq08aZSSde0Fng1gnHUVjF1tYEBQA="><img
+						id="pet1-img" src="img/pet1.png" alt=""></a>
+				<ul id="info1">
+					<li> Johnny Dang </li>
+					<li> johnnydang@gmail.com </li>
+					<li> Dog </li>
+					<li> Maltipoo </li>
+					<li> Male </li>
+					<li> Get along with children </li>
+					<li> Maltipoo puppy with a fluffy ball of energy will melt your heart with its playful and
+						affectionate personality.</li>
+				</ul>
+				<button type="button" class="btn btn-outline-success button-pet"> Interested! </button>
+			</div>
+			<div class="pet">
+				<a
+					href="https://c4.wallpaperflare.com/wallpaper/917/691/823/dark-dog-animals-portrait-wallpaper-preview.jpg">
+					<img id="pet2-img" src="img/pet2.png" alt=""> </a>
+				<ul id="info2">
+					<li> Kevin Nguyen</li>
+					<li> kevinnugyen@gmail.com </li>
+					<li> Dog </li>
+					<li> Rottweiler </li>
+					<li> Male </li>
+					<li> Get along with adult </li>
+					<li> Looking for a loyal and protective furry friend? This Rottweiler puppy will bring both love and
+						security to your family.</li>
+				</ul>
+				<button type="button" class="btn btn-outline-success button-pet"> Interested! </button>
+			</div>
+			<div class="pet">
+				<a
+					href="https://media.istockphoto.com/id/1186143372/photo/little-red-kitten.jpg?s=612x612&w=0&k=20&c=PARUwPgq1EDUM8ByEQP2RdSfK_Aafl9g9cPs9t_VREE=">
+					<img id="pet3-img" src="img/pet3.png" alt=""> </a>
+				<ul id="info3">
+					<li> Viviane Tran </li>
+					<li> vivianetran@gmail.com </li>
+					<li> Cat </li>
+					<li> Mixed </li>
+					<li> Female </li>
+					<li> Get along with adult </li>
+					<li> This kitten will steal your heart with its adorable appearance and charming personality, making
+						your home a cozy and joyful place.</li>
+				</ul>
+				<button type="button" class="btn btn-outline-success button-pet"> Interested! </button>
+			</div>
+
+			<div id="footer-browse">
+				<a href="privacy.html" class="privacy"> <img src="img/output-onlinegiftools.gif" alt="privacy-policy"
+						class="privacy-policy"> </a>
+				<p class="copyright">© AdoptUs</p>
+			</div>
+		</div>
+	</div>
+		<script>
+			document.getElementById("date").innerHTML = getCurrentDate();
+			setInterval(getCurrentTime, 1000);
+		</script>
+</body>
+
+</html>
